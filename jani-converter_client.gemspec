@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Jani::ConverterClient::VERSION
   spec.authors       = ["Shin'ichi Ohno"]
   spec.email         = ["shin1ohno@me.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{API client for jani-converter.}
+  spec.description   = %q{API client for jani-converter.}
   spec.homepage      = ""
   spec.license       = "MIT"
 
@@ -18,9 +18,11 @@ Gem::Specification.new do |spec|
   spec.test_files    = spec.files.grep(%r{^(test|spec|features)/})
   spec.require_paths = ["lib"]
 
+  spec.add_dependency "faraday"
+  spec.add_dependency "jani-from_json"
+
   spec.add_development_dependency "bundler", "~> 1.7"
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec"
   spec.add_development_dependency "rspec-collection_matchers"
-  spec.add_development_dependency "factory_girl"
 end
