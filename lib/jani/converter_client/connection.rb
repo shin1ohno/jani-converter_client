@@ -13,7 +13,7 @@ class Jani::ConverterClient::Connection
     )
   end
 
-  def post_movie(movie_data: movie_data, callback_url: callback_url)
+  def post_movie(movie_data: , callback_url: )
     Jani::ConverterClient::Response.new(
       connection.post() do |req|
         req.url "#{@base_url}.json"
